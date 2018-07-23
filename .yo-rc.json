@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Arun N. Kumar",
+      "authorEmail": "gettoarun@gmail.com",
+      "authorUrl": "www.arunkumar.io"
+    }
+  }
+}
