@@ -62,7 +62,7 @@ module.exports = class Gosh extends Generator {
   writing() {
     this.fs.copyTpl(
       this.templatePath('.projects.yml'),
-      this.destinationPath('.projects.yml'), 
+      this.destinationPath('.projects.yml'),
       {
         name: this.props.name,
         version: this.props.version || '1.0.0',
