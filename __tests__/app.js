@@ -11,6 +11,6 @@ describe('generator-gosh:app', () => {
   });
 
   it('creates files', () => {
-    assert.file(['dummyfile.txt']);
+    assert.file(['.projects.yml']);
   });
 });

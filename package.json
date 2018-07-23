@@ -34,7 +34,7 @@
     "jest": "^22.0.6"
   },
   "engines": {
-    "npm": ">= 4.0.0"
+    "npm": ">= 6.0.0"
   },
   "dependencies": {
     "yeoman-generator": "^2.0.1",
