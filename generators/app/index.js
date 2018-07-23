@@ -4,6 +4,7 @@ const chalk = require('chalk');
 const yosay = require('yosay');
 
 /**
+  Gosh is a yeoman generator for simplified project management tasks.
 
   initializing - Your initialization methods (checking current project state, getting configs, etc)
   prompting - Where you prompt users for options (where you’d call this.prompt())
@@ -15,8 +16,8 @@ const yosay = require('yosay');
   end - Called last, cleanup, say good bye, etc
 
  */
-module.exports = class extends Generator {
-
+module.exports = class Gosh extends Generator {
+  // Initialize Gosh
   constructor(args, opts) {
     super(args, opts);
 
@@ -47,8 +48,8 @@ module.exports = class extends Generator {
       {
         type: 'input',
         name: 'source_server',
-        message: `Provider your source control server Domain/IP: `,
-      },
+        message: `Provider your source control server Domain/IP: `
+      }
     ];
 
     return this.prompt(prompts).then(props => {
@@ -71,9 +72,5 @@ module.exports = class extends Generator {
         }
       }
     );
-  }
-
-  install() {
-    //this.installDependencies();
   }
 };
