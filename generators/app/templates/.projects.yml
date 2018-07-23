@@ -1,0 +1,6 @@
+---
+name: <%= name %>
+version: <%= version %>
+source:
+  type: <%= source.type %>
+  server: <%= source.server %>
